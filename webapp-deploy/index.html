@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicShop — витрина</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>MusicShop</h1>
+        <p class="subtitle">Выберите набор или товар — и откройте карточку в боте</p>
+    </header>
+
+    <div class="tabs">
+        <button class="tab active" data-tab="sets">Наборы</button>
+        <button class="tab" data-tab="products">Товары</button>
+    </div>
+
+    <div id="sets" class="tab-content active">
+        <div class="routes-grid" id="sets-grid"></div>
+    </div>
+
+    <div id="products" class="tab-content">
+        <div class="places-grid" id="products-grid"></div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
